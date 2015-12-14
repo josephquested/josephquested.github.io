@@ -1,4 +1,17 @@
-header h1 {
+h2 {
   text-align: center;
   padding-top: 30px;
 }
+
+p {
+  text-align: center;
+}
+
+.header-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
