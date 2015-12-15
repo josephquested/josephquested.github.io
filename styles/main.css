@@ -2,6 +2,23 @@
   text-align: center;
   font-size: 6vw;
   padding-top: 30px;
+  text-overflow: none;
+}
+
+hr {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 8px auto;
+  height: 0px;
+  width: 80%;
+  max-height: 0px;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #ffffff;
 }
 
 hr {
@@ -51,6 +68,7 @@ p {
 }
 
 .blog-post-title {
+<<<<<<< HEAD
   font-size: 4vw;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -60,4 +78,8 @@ p {
   font-size: 2.5vw;
   margin-top: 0px;
   padding-top: 0px;
+=======
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+>>>>>>> 8e43cdd24816ff935864f84aae68f0ee22401e57
 }
