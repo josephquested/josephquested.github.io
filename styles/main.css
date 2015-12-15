@@ -1,11 +1,10 @@
 .page-header h2 {
   text-align: center;
-  font-size: 6vw;
+  font-size: 6.5vw;
   padding-top: 30px;
-  text-overflow: none;
 }
 
-hr {
+/*hr {
   display: block;
   position: relative;
   padding: 0;
@@ -19,7 +18,7 @@ hr {
   border: none;
   border-top: 1px solid #aaaaaa;
   border-bottom: 1px solid #ffffff;
-}
+}*/
 
 hr {
   display: block;
@@ -45,7 +44,7 @@ p {
 .header-link {
   text-decoration: none;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 3.5vw;
   color: black;
   padding-left: 10px;
   padding-right: 10px;
@@ -68,8 +67,7 @@ p {
 }
 
 .blog-post-title {
-<<<<<<< HEAD
-  font-size: 4vw;
+  font-size: 3.5vw;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
@@ -78,8 +76,6 @@ p {
   font-size: 2.5vw;
   margin-top: 0px;
   padding-top: 0px;
-=======
   margin-bottom: 0px;
   padding-bottom: 0px;
->>>>>>> 8e43cdd24816ff935864f84aae68f0ee22401e57
 }
