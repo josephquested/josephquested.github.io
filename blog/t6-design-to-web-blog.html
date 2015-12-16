@@ -65,36 +65,39 @@
         </p>
         <div class="container">
           <div class="row">
-            <div class="six columns">
-                <img class="blog-post-image" src="/images/wireframe-blog-page-desktop.jpg">
+            <div class="one-half column">
+                <img class="u-max-full-width" src="/images/wireframe-blog-page-desktop.jpg">
             </div>
-          <div class="six columns">
-                <img class="blog-post-image" src="/images/wireframe-blog-page-mobile.jpg">
+            <div class="one-half column">
+                <img class="u-max-full-width" src="/images/wireframe-blog-page-mobile.jpg">
             </div>  
           </div>
           <div class="row">
-            <div class="six columns">
-                <img class="blog-post-image" src="/images/wireframe-index-page-desktop.jpg">
+            <div class="one-half column">
+                <img class="u-max-full-width" src="/images/wireframe-index-page-desktop.jpg">
             </div>
-          <div class="six columns">
-                <img class="blog-post-image" src="/images/wireframe-index-page-mobile.jpg">
+          <div class="one-half column">
+                <img class="u-max-full-width" src="/images/wireframe-index-page-mobile.jpg">
             </div>  
           </div>
         </div>
-       <!--  <img src="/images/wireframe-index-page-mobile.jpg">
-        <img src="/images/wireframe-index-page-mobile.jpg"> -->
+        <p><br><strong>The aspects of your wireframes you found difficult to implement, and why:</strong><br>
+          Definitely the images have given me the most trouble so far. I don't fully understand the logic behind the column system when it comes to mobile screen sizes. The above images are both set as class="one-half column" divs, with a dynamic sizes that allows them to grow or shrink with the screen. But once shrunk down to a mobile format, it seems like skeleton automatically collapses all columns down into individual rows, which is actually not what I want. But I'm sure I'll get it with practice. <br>
+          <em>(*Note, I have now fixed this issue by using the built in skeleton class u-max-full-width)</em></p>
+          <p><strong>The accessibility features you included in your site:</strong><br>
+          In addition to role="" elements, I have stuck to the classic rules of blue links, basic navigation, and generally just following web conventions. </p>
       </div>
     </div>
   </div>
   <div class="post-footer">
     <div class="container">
       <div class="row">
-        <div class="four columns">
-          <a href="/blog/blog-archive.html">return to archive</a>
-        </div>
-        <div class="eight columns">
+        <!-- <div class="one-half column"> -->
           <p class="blog-post-signiture"> -joseph.quested.</p>
-        </div>
+        <!-- </div> -->
+        <!-- <div class="one-half column"> -->
+          <a class="blog-post-return-to-archive" href="/blog/blog-archive.html">return to archive</a>
+        <!-- </div> -->
       </div>
     </div>
   </div>
