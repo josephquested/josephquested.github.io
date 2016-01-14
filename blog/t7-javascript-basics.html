@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>blog - quested.company</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="/styles/main.css">
+
+  </head>
+  <body>
+  <header role="banner">
+    <div class="page-header">
+      <div class="container">
+        <div class="row">
+          <h2>QUESTED.COMPANY.BLOG</h2>
+        </div>
+      </div>
+    </div>
+    <nav role="navigation">
+      <div class="page navigation">
+        <div class="container">
+          <div class="row">
+            <p>
+              <a class="header-link" href="/index.html">Home</a>
+              <a class="header-link" href="/blog/blog-archive.html">Blog</a>
+              <a class="header-link" href=#>Games</a>
+              <a class="header-link" href=#>Podcast</a>
+              <a class="header-link" href=#>Contact</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <hr class= "horizontal-devide">
+  </header>
+  </div>
+  <div class="post-header">
+    <div class="container">
+      <div class ="row">
+        <h3 class="blog-post-title">Javascript Basics</h3>
+      </div>
+      <div class ="row">
+        <h4 class="blog-post-date">January 14th - 2016</h4>
+      </div>
+    </div>
+  </div>
+  <div class="post-body">
+    <div class="container">
+      <div class="post-text">
+        <p><strong>How does Javascript compare to HTML and CSS?</strong></p>
+        <p>
+        Javascript is a very different language to HTML and CSS because it follows different basic rules. While HTML and CSS are cascading languages (you read them from top to bottom, like your eyes cascading down the page), Javascript is an object oriented language. You (and by extension, the computer) doesn't always read it from top to bottom. In certain ways you do, it has functions that you read from top to bottom, for the most part, but not always. It's like the difference between reading a novel from start to finish (HTML, CSS) or exploring a great Where's Waldo book with your eyeballs (Javascript)</p>
+        <p><strong>Explain control flow and loops using an example process from everyday life, for example 'waking up' or 'brushing your teeth'</strong></p>
+        <p>
+        When you are writing a function, you are essentially writing a list of ordered instructions. As you know, the holidays have just been and gone, and hopefully you have thrown away your christmas tree by now. Cast your mind back though, to the night you put it up. I bet you were excited. Let's write a function for that. You might first start by naming what it is that you are doing, in english, that might be "I am putting up the christmas tree". In Javascript, you might say function PutUpChristmasTree(tree, lights) {}. The first part describes the action you are taking (The name of the function) and then the tree and its lights are also included in the process. These are called the "inputs". The function might then go on to list all the steps involved in putting up the tree, and most likely, many of these steps would also be their own functions. IE: </p>
+        <p>PutUpChristmasTree(tree, lights) { <br>
+        BuyChristmasTree(money); <br>
+        TakeTreeHome(); <br>
+        var decorations = FindDecorations(); // Here we find some more decorations to go with the light we already have.<br>
+        while (lightsTangled) { // A looping function
+        UntagleLights(lights);<br>
+          }}</p>
+        <p>
+        As you can see at the end here, we have what is known as a loop. We say WHILE the god damned lights are still tangled up, untangle the god damn lights. That function will just repeat itself, over and over again, until the lights are no longer tangled. As you can see, I didn't even bother to write the rest of the function, because the lights can never be untangled. This function will most likely crash your computer and your real life.</p>
+        <p><strong>Explain the difference between accessing data from arrays and object literals</strong></p>
+        <p>
+          There are many ways to store and access data in Javascript. Two different methods are as follows: Arrays. Arrays are as they sound, an array of various pieces of information, all strung together in a row. Once you put things into an array, you can access it again by way of its index. Say I added six numbers into an array. (var numbers = [4, 8, 15, 16, 23, 42]) I could retrieve the numbers by calling their position via index. It is important to note, computers start counting at 0, not 1. So if I wanted to get the fourth number form the array, I would type numbers[3]. The number in the square brackets in the index I want to retrieve. Another common way to store data is to make a new object all of your own. My children love smashing things and screaming, so lets make a fun environment in which they can smash things. In Javascript, I would define that environment like this:</p><p> var smashPalace = {<br>
+          cups : 5, <br>
+          expensive : ["tv", "laptop", "iphone"],<br>
+          eachother : "cagematch"<br>
+          };</p>
+          <p>
+          The things in there don't really make much sense, but neither does violence. If I wanted to get some information out of this object, there are several ways I could do it. My favourite being "dot notiation". If one of my children broke a cup, I could easily update the cup=count by typing: smashPalace.cups = 4;</p>
+          <p><strong>With an example, explain the differences between 'functional' and 'object oriented' programming</strong></p>
+          <p>I feel very ill-equipped to answer this question, because I just really don't know. I even tried to cheat, right now, and just read the answer online, but even that yielded me basically no more insight than I had before. So I'll try give an approximation of what I think the difference is: Object oriented programming is exactly that, an emphasis on chucks of data, and what you are going to do with that data. Like a supermarket, lots of products, all with their own characteristics and appearances. Functional programming is more like a factory, not so many finished products, more of a focus on the functions and procedures that go into making stuff. Functional programming fetishises the machinery and its workings, not the product and its qualities. <br>
+          ...<br><br>
+          Maybe?
+         <br>-xx JQ</p>
+      </div>
+    </div>
+  </div>
+  <div class="post-footer">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="one-half column"> -->
+          <p class="blog-post-signiture"> -joseph.quested.</p>
+        <!-- </div> -->
+        <!-- <div class="one-half column"> -->
+          <a class="blog-post-return-to-archive" href="/blog/blog-archive.html">return to archive</a>
+        <!-- </div> -->
+      </div>
+    </div>
