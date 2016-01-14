@@ -1,14 +1,3 @@
-/*body {
-    background-image: url("/images/beach.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-*/
-
-.ibg-bg {
-    position: absolute;
-}
-
 .page-header h2 {
   text-align: center;
   font-size: 6.5vw;
