@@ -3,6 +3,10 @@
 
 $(document).ready(function(){
     $(".bg").interactive_bg(); // function call
+    $(".bg > .ibg-bg").css({
+        width: $(window).outerWidth(),
+        height: $(window).outerHeight()
+      })
 });
  
   // change background size on window resize

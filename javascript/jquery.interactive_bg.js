@@ -18,7 +18,7 @@
   var defaults = {
     strength: 60,
     scale: 1.10,
-    animationSpeed: "100ms",
+    animationSpeed: "600ms",
     contain: false,
     wrapContent: true
   };  
