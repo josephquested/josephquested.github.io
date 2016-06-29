@@ -3,9 +3,17 @@ body {
   text-align: center;
 }
 
-span, a {
-  padding: 8px 25px;
+h1 {
+  margin-bottom: 0px;
+}
+
+span, button {
+  padding: 8px 30px;
   display: flex;
   align-self: center;
   justify-content: center;
+  background:none;
+  border:none;
+  font-size:1em;
+  outline: none;
 }
