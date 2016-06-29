@@ -1,13 +1,17 @@
 var app = document.getElementById('app')
-changePage({target: {innerHTML: 'home'}})
-
-var links = document.getElementsByClassName('nav-link')
-for (key in Object.keys(links)) {
-  links[key].addEventListener("click", changePage)
+var navs = document.getElementsByClassName('nav-button')
+for (key in Object.keys(navs)) {
+  if (navs[key] !== undefined) {
+    navs[key].addEventListener("click", changePage)
+  }
 }
+
+changePage({target: {innerHTML: 'home'}})
 
 function changePage (e) {
   emptyNode(app)
+  setNavActive(document.getElementById(e.target.innerHTML))
+
   switch (e.target.innerHTML) {
     case "home":
       renderHome()
@@ -39,6 +43,16 @@ function emptyNode (node) {
   while (node.firstChild) {
     app.removeChild(node.firstChild);
   }
+}
+
+function setNavActive (nav) {
+  console.log(navs)
+  for (key in Object.keys(navs)) {
+    if (navs[key] !== undefined) {
+      navs[key].classList.remove("active")
+    }
+  }
+    nav.classList.add("active")
 }
 
 // page render

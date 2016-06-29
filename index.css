@@ -17,3 +17,7 @@ span, button {
   font-size:1em;
   outline: none;
 }
+
+button.active {
+  color: blue;
+}
