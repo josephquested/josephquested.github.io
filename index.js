@@ -69,6 +69,6 @@ function renderGames () {
 
 function renderContact () {
   appendNode('h2', 'contact')
-  appendNode('p', '021647472')
+  appendNode('p', '021 647 472')
   appendLink('mailto:josephquested@gmail.com', 'josephquested@gmail.com')
 }
