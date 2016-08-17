@@ -46,7 +46,6 @@ function emptyNode (node) {
 }
 
 function setNavActive (nav) {
-  console.log(navs)
   for (key in Object.keys(navs)) {
     if (navs[key] !== undefined) {
       navs[key].classList.remove("active")
@@ -54,6 +53,27 @@ function setNavActive (nav) {
   }
     nav.classList.add("active")
 }
+
+// flicker header
+
+String.prototype.splice = function(idx, rem, str) {
+    return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
+}
+
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function flickerHeader () {
+  var title = document.getElementById("title")
+  var text = "QUESTEDco"
+  setInterval(() => {
+    var newText = text.splice(randomInt(0, text.length), 0, ".");
+    title.innerHTML = newText
+  }, 200)
+}
+
+flickerHeader()
 
 // page render
 
