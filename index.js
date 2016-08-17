@@ -56,24 +56,24 @@ function setNavActive (nav) {
 
 // flicker header
 
-String.prototype.splice = function(idx, rem, str) {
-    return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
-}
-
-function randomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function flickerHeader () {
-  var title = document.getElementById("title")
-  var text = "QUESTEDco"
-  setInterval(() => {
-    var newText = text.splice(randomInt(0, text.length), 0, ".");
-    title.innerHTML = newText
-  }, 200)
-}
-
-flickerHeader()
+// String.prototype.splice = function(idx, rem, str) {
+//     return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
+// }
+//
+// function randomInt(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+//
+// function flickerHeader () {
+//   var title = document.getElementById("title")
+//   var text = "QUESTEDco"
+//   setInterval(() => {
+//     var newText = text.splice(randomInt(0, text.length), 0, ".");
+//     title.innerHTML = newText
+//   }, 200)
+// }
+//
+// flickerHeader()
 
 // page render
 
