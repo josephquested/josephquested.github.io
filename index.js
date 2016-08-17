@@ -1,5 +1,6 @@
 var app = document.getElementById('app')
 var navs = document.getElementsByClassName('nav-button')
+
 for (key in Object.keys(navs)) {
   if (navs[key] !== undefined) {
     navs[key].addEventListener("click", changePage)
@@ -15,9 +16,6 @@ function changePage (e) {
   switch (e.target.innerHTML) {
     case "home":
       renderHome()
-      break
-    case "games":
-      renderGames()
       break
     case "contact":
       renderContact()
@@ -80,11 +78,6 @@ function setNavActive (nav) {
 function renderHome () {
   appendNode('h2', 'home')
   appendNode('p', 'welcome to my webpage')
-}
-
-function renderGames () {
-  appendNode('h2', 'games')
-  appendLink('http://quested-immune.herokuapp.com', 'immune')
 }
 
 function renderContact () {
