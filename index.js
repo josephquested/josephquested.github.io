@@ -82,6 +82,7 @@ function renderHome () {
 
 function renderContact () {
   appendNode('h2', 'contact')
-  appendNode('p', '021 647 472')
+  appendLink('tel:+6421647472', '021 647 472')
+  appendNode('p', '')
   appendLink('mailto:josephquested@gmail.com', 'josephquested@gmail.com')
 }
