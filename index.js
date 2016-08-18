@@ -55,10 +55,6 @@ function setNavActive (nav) {
 
 // header
 
-String.prototype.splice = function(idx, rem, str) {
-    return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
-}
-
 function renderHeader () {
   var title = document.getElementById("title")
   var text = "QUESTED.co"
@@ -68,6 +64,13 @@ function renderHeader () {
     title.appendChild(h1)
     setOnClick(h1)
   }
+  setHeaderProperties(title)
+}
+
+function setHeaderProperties (title) {
+  title.onmousemove = () => unFocus()
+  title.onmouseup = () => unFocus()
+  title.style.cursor = "pointer"
 }
 
 function setOnClick (node) {
@@ -77,11 +80,16 @@ function setOnClick (node) {
   }
 }
 
-function randomColor (node) {
-}
-
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var unFocus = function () {
+  if (document.selection) {
+      document.selection.empty()
+  } else {
+      window.getSelection().removeAllRanges()
+  }
 }
 
 // page render
