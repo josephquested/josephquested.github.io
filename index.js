@@ -7,6 +7,7 @@ for (key in Object.keys(navs)) {
   }
 }
 
+renderHeader()
 changePage({target: {innerHTML: 'home'}})
 
 function changePage (e) {
@@ -52,26 +53,36 @@ function setNavActive (nav) {
     nav.classList.add("active")
 }
 
-// flicker header
+// header
 
 String.prototype.splice = function(idx, rem, str) {
     return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
 }
 
+function renderHeader () {
+  var title = document.getElementById("title")
+  var text = "QUESTED.co"
+  for (var i = 0; i < text.length; i++) {
+    var h1 = document.createElement("h1")
+    h1.appendChild(document.createTextNode(text[i]))
+    title.appendChild(h1)
+    setOnClick(h1)
+  }
+}
+
+function setOnClick (node) {
+  node.onclick = function () {
+    var colors = ["red", "blue", "yellow", "black", "green", "orange", "white", "purple", "teal", "brown"]
+    node.style.color = colors[randomInt(0, colors.length)]
+  }
+}
+
+function randomColor (node) {
+}
+
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-function flickerHeader () {
-  var title = document.getElementById("title")
-  var text = "QUESTEDco"
-  setInterval(() => {
-    var newText = text.splice(randomInt(0, text.length), 0, ".");
-    title.innerHTML = newText
-  }, randomInt(200, 400))
-}
-
-flickerHeader()
 
 // page render
 
