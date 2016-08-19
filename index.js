@@ -68,9 +68,9 @@ function renderHeader () {
 }
 
 function setHeaderProperties (title) {
-  title.onmousemove = () => unFocus()
-  title.onmouseup = () => unFocus()
-  title.style.cursor = "pointer"
+  // title.onmousemove = () => unFocus()
+  // title.onmouseup = () => unFocus()
+  // title.style.cursor = "pointer"
 }
 
 function setOnClick (node) {
@@ -85,11 +85,11 @@ function randomInt(min, max) {
 }
 
 var unFocus = function () {
-  if (document.selection) {
-      document.selection.empty()
-  } else {
-      window.getSelection().removeAllRanges()
-  }
+  // if (document.selection) {
+  //     document.selection.empty()
+  // } else {
+  //     window.getSelection().removeAllRanges()
+  // }
 }
 
 // page render
