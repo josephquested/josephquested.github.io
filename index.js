@@ -64,7 +64,7 @@ function renderHeader () {
     title.appendChild(h1)
     setOnClick(h1)
   }
-  // setHeaderProperties(title)
+  setHeaderProperties(title)
 }
 
 function setHeaderProperties (title) {
