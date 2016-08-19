@@ -76,6 +76,8 @@ function setHeaderProperties (title) {
 function setOnClick (node) {
   node.onclick = function () {
     var colors = ["red", "blue", "yellow", "black", "green", "orange", "white", "purple", "teal", "brown"]
+    var color = colors[randomInt(0, colors.length)]
+    while (color == node.style.color) color = colors[randomInt(0, colors.length)]
     node.style.color = colors[randomInt(0, colors.length)]
   }
 }
