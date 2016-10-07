@@ -18,6 +18,9 @@ function changePage (e) {
     case "home":
       renderHome()
       break
+    case "frasier":
+      renderFrasier()
+      break
     case "contact":
       renderContact()
       break
@@ -106,4 +109,9 @@ function renderContact () {
   appendLink('tel:+6421647472', '021 647 472')
   appendNode('p', '')
   appendLink('mailto:josephquested@gmail.com', 'josephquested@gmail.com')
+}
+
+function renderFrasier () {
+  appendNode('h2', 'frasier')
+  appendLink('http://quested.co/scrambled-egg', 'stream frasier online')
 }
