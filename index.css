@@ -1,17 +1,7 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-align: center;
-}
-
-h1 {
-  font-size:3em;
-  margin-bottom: 0px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  background-color: black;
 }
 
 span, button {
@@ -21,10 +11,23 @@ span, button {
   justify-content: center;
   background:none;
   border:none;
-  font-size:1em;
+  font-size: 4vw;
   outline: none;
 }
 
+h1 {
+  font-size: 10vw;
+}
+
+p {
+  color: black;
+  pointer-events: none;
+}
+
+button {
+  color: red;
+}
+
 button.active {
-  color: blue;
+  color: white;
 }

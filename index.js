@@ -4,100 +4,64 @@ var navs = document.getElementsByClassName('nav-button')
 for (key in Object.keys(navs)) {
   if (navs[key] !== undefined) {
     navs[key].addEventListener("click", changePage)
+    flicker.init(navs[key])
   }
 }
 
-renderHeader()
-changePage({target: {innerHTML: 'home'}})
+changePage({target: {id: 'home', classList: {add: () => "lol"}}})
 
 function changePage (e) {
   emptyNode(app)
-  setNavActive(document.getElementById(e.target.innerHTML))
+  setNavActive(e.target)
 
-  switch (e.target.innerHTML) {
+  switch (e.target.id) {
     case "home":
       renderHome()
       break
     case "frasier":
       renderFrasier()
       break
+    case "podcast":
+      renderPodcast()
+      break
     case "contact":
       renderContact()
       break
-  }
+    }
 }
 
 function appendNode (node, text) {
   var newNode = document.createElement(node)
   var textNode = document.createTextNode(text)
-  newNode.appendChild(textNode);
-  app.appendChild(newNode);
+  newNode.appendChild(textNode)
+  app.appendChild(newNode)
 }
 
 function appendLink (link, text) {
   var a = document.createElement('a')
-  a.setAttribute('href', link);
-  a.innerHTML = text;
-  app.appendChild(a);
+  a.setAttribute('href', link)
+  a.innerHTML = text
+  app.appendChild(a)
 }
 
 function emptyNode (node) {
   while (node.firstChild) {
-    app.removeChild(node.firstChild);
+    app.removeChild(node.firstChild)
   }
 }
 
 function setNavActive (nav) {
+  console.log(nav);
   for (key in Object.keys(navs)) {
     if (navs[key] !== undefined) {
       navs[key].classList.remove("active")
     }
   }
-    nav.classList.add("active")
-}
-
-// header
-
-function renderHeader () {
-  var title = document.getElementById("title")
-  var text = "QUESTED.co"
-  for (var i = 0; i < text.length; i++) {
-    var h1 = document.createElement("h1")
-    h1.appendChild(document.createTextNode(text[i]))
-    title.appendChild(h1)
-    setOnClick(h1)
-  }
-  setHeaderProperties(title)
-}
-
-function setHeaderProperties (title) {
-  title.onmousemove = () => unFocus()
-  title.onmouseup = () => unFocus()
-  title.style.cursor = "pointer"
-}
-
-function setOnClick (node) {
-  node.onclick = function () {
-    var colors = ["red", "blue", "yellow", "black", "green", "orange", "white", "purple", "teal", "brown"]
-    var color = colors[randomInt(0, colors.length)]
-    while (color == node.style.color) color = colors[randomInt(0, colors.length)]
-    node.style.color = color
-  }
-}
-
-function randomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-var unFocus = function () {
-  if (document.selection) {
-      document.selection.empty()
-  } else {
-      window.getSelection().removeAllRanges()
-  }
+  nav.classList.add("active")
 }
 
 // page render
+flicker.init(document.getElementById('title'))
 
 function renderHome () {
   appendNode('h2', 'home')
@@ -114,4 +78,9 @@ function renderContact () {
 function renderFrasier () {
   appendNode('h2', 'frasier')
   appendLink('http://quested.co/scrambled-egg', 'stream frasier online')
+}
+
+function renderPodcast () {
+  appendNode('h2', 'podcast')
+  appendLink('http://boyfriendspodcast.com', 'boy friends podcast')
 }
