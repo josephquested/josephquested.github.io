@@ -11,7 +11,7 @@ span, button {
   justify-content: center;
   background:none;
   border:none;
-  font-size: 4vw;
+  font-size: 3vw;
   outline: none;
 }
 
@@ -20,14 +20,17 @@ h1 {
 }
 
 p {
-  color: black;
   pointer-events: none;
 }
 
 button {
-  color: red;
+  color: black;
 }
 
 button.active {
+  color: white;
+}
+
+#app p, h2 {
   color: white;
 }
