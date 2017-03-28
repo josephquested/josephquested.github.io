@@ -18,8 +18,8 @@ function changePage (e) {
     case "home":
       renderHome()
       break
-    case "frasier":
-      renderFrasier()
+    case "games":
+      renderGames()
       break
     case "podcast":
       renderPodcast()
@@ -75,9 +75,14 @@ function renderContact () {
   appendLink('mailto:josephquested@gmail.com', 'josephquested@gmail.com')
 }
 
-function renderFrasier () {
-  appendNode('h2', 'frasier')
-  appendLink('http://quested.co/scrambled-egg', 'stream frasier online')
+// function renderFrasier () {
+//   appendNode('h2', 'frasier')
+//   appendLink('http://quested.co/scrambled-egg', 'stream frasier online')
+// }
+
+function renderGames () {
+  appendNode('h2', 'games')
+  appendLink('http://josephquested.itch.io', 'check out my videogames')
 }
 
 function renderPodcast () {
