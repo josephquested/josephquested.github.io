@@ -51,7 +51,6 @@ function emptyNode (node) {
 }
 
 function setNavActive (nav) {
-  console.log(nav);
   for (key in Object.keys(navs)) {
     if (navs[key] !== undefined) {
       navs[key].classList.remove("active")
