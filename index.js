@@ -89,3 +89,5 @@ function renderPodcast () {
   appendNode('h2', 'podcast')
   appendLink('http://boyfriendspodcast.com', 'boy friends podcast')
 }
+
+console.log("NOTHING TO SEE HERE FOLKS")
