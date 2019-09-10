@@ -1,10 +1,15 @@
-body {
-  font-family: 'Oswald', sans-serif;
-  text-align: center;
-  background-color: black;
+﻿@font-face {
+    font-family: "seagram";
+    src: url("./seagram.ttf");
 }
 
-span, button {
+body {
+	font-family: "seagram";
+	text-align: center;
+	background-color: black;
+}
+
+span, link {
   padding: 8px 30px;
   display: flex;
   align-self: center;
@@ -17,21 +22,10 @@ span, button {
 
 h1 {
   font-size: 10vw;
+  margin-bottom: 0px;
 }
 
-p {
-  pointer-events: none;
-}
-
-button {
-  color: black;
-}
-
-button.active {
-  color: white;
-}
-
-#app p, h2 {
+link.active {
   color: white;
 }
 
@@ -47,7 +41,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: red;
+    color: white;
 }
 
 /* selected link */

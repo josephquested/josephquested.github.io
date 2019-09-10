@@ -1,11 +1,11 @@
 flicker = {init: init}
 
 var audio = new Audio('./hum.mp3')
-var flickerCharacters = ['Q', 'U', 'E', 'S', 'T', 'D', '3', '1', '7']
+var flickerCharacters = ['Y', 'U', 'N', 'G', 'L', 'O', 'V', 'E', 'R', 'S', '1', '6', '3', '7']
 var navFlickerCharacters = ['h', 'o', 'm', 'e', 'f', 'r', 'a', 's', 'i', 'e', 'r', 'c', 'o', 'n', 't', 'a', 'c', 't']
 
 var minFlickerFrequency = 3000
-var maxFlickerFrequency = 11000
+var maxFlickerFrequency = 19000
 var minFlickerSpeed = 100
 var maxFlickerSpeed = 500
 
@@ -19,7 +19,7 @@ function init (node) {
 }
 
 function initFlicker (node) {
-  var originalCharacter = node.innerHTML
+  var originalCharacter = node.innerHTML
   window.setInterval(() => {
     flickerCharacter(node, originalCharacter)
   }, randomInt(minFlickerFrequency, maxFlickerFrequency));
