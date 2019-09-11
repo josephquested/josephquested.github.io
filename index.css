@@ -25,18 +25,14 @@ h1 {
   margin-bottom: 0px;
 }
 
-link.active {
-  color: white;
-}
-
 /* unvisited link */
 a:link {
-    color: red;
+    color: black;
 }
 
 /* visited link */
 a:visited {
-    color: red;
+    color: black;
 }
 
 /* mouse over link */
