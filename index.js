@@ -1,4 +1,4 @@
-import marked from 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
+import {marked} from 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
 
 // helllo???>??
 
