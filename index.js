@@ -1,4 +1,4 @@
-import {marked} from 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
+import marked from 'https://cdn.skypack.dev/marked';
 
 fetch('https://api.github.com/repos/josephquested/josephquested.github.io/contents/')
   .then(response => response.json())
